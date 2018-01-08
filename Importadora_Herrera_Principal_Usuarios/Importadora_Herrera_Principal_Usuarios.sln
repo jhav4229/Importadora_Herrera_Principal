@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "Importadora_Herrera_Principal_Usuarios", "Importadora_Herrera_Principal_Usuarios\Importadora_Herrera_Principal_Usuarios.phpproj", "{EF6F0220-9AF0-4AAF-92DC-7A9524FF96A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF6F0220-9AF0-4AAF-92DC-7A9524FF96A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF6F0220-9AF0-4AAF-92DC-7A9524FF96A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D54E10FA-ACBF-46C9-BBCC-C925077D21EB}
+	EndGlobalSection
+EndGlobal
