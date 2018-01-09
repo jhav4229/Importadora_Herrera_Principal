@@ -1,7 +1,7 @@
 <?php
 
 
-// 10 de Octubre del 2014
+// 5 de Diciembre del 2017
 // Model.php
 // @brief agrego la clase Model para reducir las lineas de los modelos
 
@@ -27,8 +27,10 @@ class Model {
 		while($r = $query->fetch_array()){
 			$array[$cnt] = new $aclass;
 			$cnt2=1;
-			foreach ($r as $key => $v) {
-				if($cnt2>0 && $cnt2%2==0){ 
+			foreach ($r as $key => $v) 
+            {
+				if($cnt2>0 && $cnt2%2==0)
+                { 
 					$array[$cnt]->$key = $v;
 				}
 				$cnt2++;
@@ -44,8 +46,10 @@ class Model {
 		$data = new $aclass;
 		while($r = $query->fetch_array()){
 			$cnt=1;
-			foreach ($r as $key => $v) {
-				if($cnt>0 && $cnt%2==0){ 
+			foreach ($r as $key => $v) 
+            {
+				if($cnt>0 && $cnt%2==0)
+                { 
 					$data->$key = $v;
 				}
 				$cnt++;

@@ -9,10 +9,6 @@ include "admin/core/modules/index/model/ConfigurationData.php";
 
 require('fpdf/fpdf.php');
 
-
-
-
-
 class PDF extends FPDF
 {
 // Cargar los datos
@@ -51,12 +47,14 @@ $coin = ConfigurationData::getByPreffix("general_coin")->val;
 
     $service = BuyData::getByCode($_GET["code"]);
 $products = BuyProductData::getAllByBuyId($service->id);
+
    $client = ClientData::getById($service->client_id);
         $this->setY(31);
         $this->setX(20);
         $this->setY(31);
         $this->setX(20);
         $this->SetFont('Arial','B',8);
+
         $this->setY(33);
         $this->setX(20);
         $this->setY(40);
