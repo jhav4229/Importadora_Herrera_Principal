@@ -3,7 +3,8 @@ class BuyProductData {
 	public static $tablename = "buy_product";
 
 
-	public function BuyProductData(){
+	public function BuyProductData()
+    {
 		$this->title = "";
 		$this->content = "";
 		$this->image = "";
@@ -14,13 +15,15 @@ class BuyProductData {
 
 	public function getProduct() { return ProductData::getById($this->product_id);}
 
-	public function add(){
+	public function add()
+    {
 		$sql = "insert into ".self::$tablename." (buy_id,product_id,q) ";
 		$sql .= "value (\"$this->buy_id\",$this->product_id,$this->q)";
 		return Executor::doit($sql);
 	}
 
-	public static function delById($id){
+	public static function delById($id)
+    {
 		$sql = "delete from ".self::$tablename." where id=$id";
 		Executor::doit($sql);
 	}

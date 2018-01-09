@@ -3,7 +3,8 @@ class CategoryData {
 	public static $tablename = "category";
 
 
-	public function CategoryData(){
+	public function CategoryData()
+    {
 		$this->title = "";
 		$this->content = "";
 		$this->image = "";
@@ -28,12 +29,14 @@ class CategoryData {
 	}
 
 // partiendo de que ya tenemos creado un objecto CategoryData previamente utilizamos el contexto
-	public function update(){
+	public function update()
+    {
 		$sql = "update ".self::$tablename." set name=\"$this->name\",short_name=\"$this->short_name\",is_active=\"$this->is_active\" where id=$this->id";
 		Executor::doit($sql);
 	}
 
-	public static function getById($id){
+	public static function getById($id)
+    {
 		$sql = "select * from ".self::$tablename." where id=$id";
 		$query = Executor::doit($sql);
 		return Model::one($query[0],new CategoryData());
